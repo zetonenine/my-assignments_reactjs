@@ -32,7 +32,6 @@ export default function BlockedUsersContent() {
             {listUsers}
             <Dropdown active={dropdownActive} setActive={setDropdownActive}/> 
             <Modal active={modalActive} setActive={setModalActive} status={statusText}/>
-            {/* <Alert/> */}
         </div>
     )
     

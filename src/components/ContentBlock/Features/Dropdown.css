@@ -1,0 +1,28 @@
+
+
+.drop_on {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    height: 80px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 7px;
+    box-shadow: 0 0px 10px rgba(92, 92, 92, 0.2); 
+    border: 2px solid rgb(19, 156, 236);
+       
+}
+
+.drop_off {
+    display: none;
+}
+
+.select {
+    display: block;
+}
+
+.not_chosen_text {
+    color: rgba(0, 0, 0, 0.2 );
+    margin-bottom: 20px;
+}
+

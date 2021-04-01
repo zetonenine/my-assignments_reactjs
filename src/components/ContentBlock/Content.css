@@ -1,0 +1,58 @@
+
+
+.image {
+    top: 14px;
+    left: 30px;
+    width: 4%;
+    position: absolute;
+    justify-content: center; 
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.users {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 2rem auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);    
+    margin-bottom: 1.6%;
+    border-radius: 4px;
+
+    background: color_white;
+    font-family: sans-serif;
+    height: 4vw;
+    width: 93vw;
+ 
+}
+
+
+.name {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+
+}
+
+.balance {
+    position: absolute;
+    top: 25px;
+    left: 350px;
+
+}
+
+.last_seen {
+    position: absolute;
+    top: 8px;
+    right: 400px;
+}
+
+.status {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    border: 2px solid rgb(236, 19, 19);
+}
+    

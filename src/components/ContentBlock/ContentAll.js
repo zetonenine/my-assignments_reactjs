@@ -9,13 +9,8 @@ export default function AllUsersContent() {
 
     const statusText = {0: 'Приостановлена', 1: 'Подписка активна', 2: 'Заблокирован'}
     const users = MyComponent()
-    
-    
     const [modalActive, setModalActive] = useState(false)
     const [dropdownActive, setDropdownActive] = useState(false)
-
-    const date = new Date()
-    console.log(date.getDay())
 
     const listUsers = users.map((items) => {
         return (
@@ -28,7 +23,6 @@ export default function AllUsersContent() {
                     <p className='last_seen'>{items.lastUpdatedAt}</p>
                 </div>
                 <span className='status' onClick={() => setDropdownActive(items)}>{statusText[items.status]}</span> 
-
             </div>    
         )
     })
@@ -37,49 +31,7 @@ export default function AllUsersContent() {
         <div>
             {listUsers}
             <Dropdown active={dropdownActive} setActive={setDropdownActive}/> 
-            
             <Modal active={modalActive} setActive={setModalActive} status={statusText}/>
-            
-
-
-            
         </div> 
     )
 }
-
-
-
-
-
- // const users = [
-    //     {
-    //         id: 1,
-    //         name: 'Пётр',
-    //         fname: 'Иванов',
-    //         mname: 'Петрович',
-    //         status: (status[1]),
-    //         lastUpdatedAt: '10 minutes',
-    //         avatar: 'PHOTO',
-    //         balance: 307304.6927124143
-    //     },
-    //     {
-    //         id: 2,
-    //         name: 'Пётр',
-    //         fname: 'Иванов',
-    //         mname: 'Петрович',
-    //         status: (status[1]),
-    //         lastUpdatedAt: '10 minutes',
-    //         avatar: 'PHOTO',
-    //         balance: 307304.6927124143
-    //     },
-    //     {
-    //         id: 3,
-    //         name: 'Пётр',
-    //         fname: 'Иванов',
-    //         mname: 'Петрович',
-    //         status: (status[1]),
-    //         lastUpdatedAt: '10 minutes',
-    //         avatar: 'PHOTO',
-    //         balance: 307304.6927124143
-    //     },
-    // ]

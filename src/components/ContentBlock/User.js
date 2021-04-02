@@ -20,8 +20,10 @@ export default function User(props) {
                 <span className='balance'>Баланс: {Number(props.data.balance.toFixed(1)).toLocaleString('ru-RU').replace(',', '.')} </span>
                 <p className='last_seen'>{Dater(props.data.lastUpdatedAt)}</p>
             </div>
-            <div className='status' onClick={(e) => handleDropdownClick(e, props.data)}>{statusText[props.data.status]}</div> 
-            <Dropdown active={dropdownActive} setActive={setDropdownActive}/> 
+            <div className='status' onClick={(e) => handleDropdownClick(e, props.data)}>
+               {statusText[props.data.status]}
+               <Dropdown active={dropdownActive} setActive={setDropdownActive}/>
+           </div> 
         </div>   
     )
 };

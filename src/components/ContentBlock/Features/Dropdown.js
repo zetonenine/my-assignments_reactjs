@@ -10,11 +10,14 @@ export default function Dropdown(props) {
     }
 
     return (
-        <div className={props.active ? 'drop active' : 'drop'} onClick={(e) => handleClick(e)}>
-            <div className='drop_content' >
-                <DropdownContent user={props.active} setActive={props.setActive}/>
-            </div>
-        </div>    
+        <>
+           <div className={props.active ? 'drop active' : 'drop'}>
+               <div className='drop_content' >
+                   <DropdownContent user={props.active} setActive={props.setActive}/>
+               </div>
+           </div>
+           <div className={props.active ? 'drop_background active' : 'drop_background'} onClick={(e) => handleClick(e)}></div>
+       </>
     );
 }
 

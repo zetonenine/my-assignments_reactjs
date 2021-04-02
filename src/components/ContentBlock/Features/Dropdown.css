@@ -1,24 +1,29 @@
 
+.drop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    
+}
 
-.drop_on {
+.drop.active {
+    transform: scale(1);
+}
+
+.drop_content {
     position: absolute;
-    right: 50px;
+    right: 60px;
     top: 20px;
-    height: 80px;
-    width: 150px;
+    height: 130px;
+    width: 200px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 7px;
     box-shadow: 0 0px 10px rgba(92, 92, 92, 0.2); 
     border: 2px solid rgb(19, 156, 236);
-       
-}
-
-.drop_off {
-    display: none;
-}
-
-.select {
-    display: block;
+         
 }
 
 .not_chosen_text {

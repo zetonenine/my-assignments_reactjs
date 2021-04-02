@@ -13,8 +13,9 @@ export default function ContentBlock(props) {
     const listUsers = users.map((item) => {
         if (!props.filter || props.filter === item.status) {
             return (
-            <User data={item} handleClick={() => setModalActive(item)} />
-        )}
+                <User key={item.id} data={item} handleClick={() => setModalActive(item)} />
+        
+        )} return(console.log('No status')) // для избегания ошибки Array.prototype.map() expects a value to be returned at the end of arrow function
     });
     
     return (

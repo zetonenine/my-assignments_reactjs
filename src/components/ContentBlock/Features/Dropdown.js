@@ -2,16 +2,15 @@ import React from 'react';
 import './Dropdown.css';
 import DropdownContent from './DropdownContent.js';
 
-
-const Dropdown = ({active, setActive}) => {
+export default function Dropdown(props) {
+   
     return (
-        <div className={active ? 'drop active' : 'drop'} onClick={() => setActive(false)}>
-            
+        <div className={props.active ? 'drop active' : 'drop'} onClick={() => props.setActive(false)}>
             <div className='drop_content' >
-                <DropdownContent user={active} />
+                <DropdownContent user={props.active} setActive={props.setActive}/>
             </div>
         </div>    
     );
-};
+}
 
-export default Dropdown;
+

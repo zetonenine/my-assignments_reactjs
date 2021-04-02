@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Dater = (item) => {
 
@@ -29,8 +29,7 @@ const Dater = (item) => {
     } else if (diff_sec < 60) {
         return (
             `Последнее изменение: ${diff_sec} секунд назад`
-        )
-        
+        )      
     }
 }
 

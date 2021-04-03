@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
@@ -13,27 +13,25 @@ export default function Header() {
     };
 
     return (
-        
-            <header className='titles'>
+        <header className='titles'>
                 
             
-                <Link to="/">
+                <NavLink exact to="/" className="text" onClick={() => toggleClass(setActiveAll)}>
                     Все
-                        {/* <div className={isActiveAll ? "square" : "square_off"}/> */}
+                    <div className={isActiveAll ? "square" : "square_off"}/>
                     
-                </Link>
-                <Link to='/blocked' className={isActiveBlocked ? 'text active' :'text'} onClick={() => toggleClass(setActiveBlocked)}>
-                    <a>Заблокированные
-                        <div className={isActiveBlocked ? "square" : "square_off"}/>    
-                    </a>
-                </Link>
-                <Link to='/active'>
-                    <a className={isActiveActive ? 'text active' :'text'} onClick={() => toggleClass(setActiveActive)}>Активные
-                        <div className={isActiveActive ? "square" : "square_off"}/>
-                    </a>
-
-                </Link>  
-            </header>
+                </NavLink>
+                <NavLink exact to='/blocked' className='text' onClick={() => toggleClass(setActiveBlocked)}>
+                    Заблокированные
+                    <div className={isActiveBlocked ? "square" : "square_off"}/>    
+                    
+                </NavLink>
+                <NavLink exact to='/active'  className='text' onClick={() => toggleClass(setActiveActive)} >
+                    Активные
+                    <div className={isActiveActive ? "square" : "square_off"}/>
+                    
+                </NavLink>  
+        </header>
             
     )
 };

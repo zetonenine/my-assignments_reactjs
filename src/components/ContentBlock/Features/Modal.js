@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../Stylistics.css'
+import '../../Stylistics.css';
 
-export default function Modal(props){
+export default function Modal (props){
     
     const handleClick = (e) => {
         e.stopPropagation();
         props.setActive(false)
-    }
+    };
     
     return(
         <div className={props.active ? "modal active" : "modal"} onClick={() => props.setActive(false)}>
@@ -17,7 +17,7 @@ export default function Modal(props){
                 </div>
                 <hr className='hr'/>
                 <div className='modal_body'>
-                    <input className='input' value= {props.active['fname']} readOnly></input>
+                    <input className='input' value={props.active['fname']} readOnly></input>
                     <input className='input' value={props.active['name']} readOnly></input>
                     <input className='input' value={props.active['mname']} readOnly></input>
                     <input className='input' value={props.status[props.active['status']]} readOnly></input>

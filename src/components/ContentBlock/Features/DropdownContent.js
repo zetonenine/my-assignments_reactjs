@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Stylistics.css'
+import '../../Stylistics.css';
 
 export default function DropdownContent(props) {
 
@@ -7,7 +7,7 @@ export default function DropdownContent(props) {
         e.stopPropagation();
         item.status = newStatus;
         setActive(false)
-    }
+    };
 
     return (
         <div className='dropdown_opitons'>

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import All from './components/Pages/AllPage'
+import All from './components/Pages/AllPage';
 import Blocked from './components/Pages/BlockedPage.js';
 import Active from './components/Pages/ActivePage.js';
 import './App.css';
-import img from './components/loading.jpg' 
+import img from './components/loading.jpg';
 
 function App() {
   const [error, setError] = useState(null);
@@ -43,9 +43,8 @@ function App() {
           {
             !isLoaded && 
               <>
-                <img src={'/components/loading.jpg'} />
+                <img src={img} />
                 <div className='loading_text'>Loading...</div>
-                
               </>
           }
           {!error && isLoaded &&

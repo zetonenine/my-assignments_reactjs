@@ -16,17 +16,15 @@
 
 .text {
     position: relative; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    letter-spacing: 0.2mm;
-    text-decoration: none;
     margin: auto;
     margin-right: 0;
     display: inline-block; 
     color: #cccccc; 
     font-family: Roboto;
     font-weight: 300;
-
+    font-size: 15px;
+    letter-spacing: 0.2mm;
+    text-decoration: none;
 }
 
 .active {
@@ -34,9 +32,14 @@
 }
 
 .square {
+    visibility: hidden;
+}
+
+.active .square {
+    visibility: visible;
     position: absolute;
     background-color: #6b7df0;
-    bottom: -46px;
+    bottom: -45px;
     width: 120%;
     height: 40px;
     border-radius: 5px;
@@ -44,7 +47,5 @@
     transform: translateX(-50%);
 }
 
-.square_off {
-    display: none;
-}
+
 

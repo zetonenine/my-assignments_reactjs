@@ -10,17 +10,18 @@
     border-radius: 4px;
     background-color: white;
     font-family: sans-serif;
-    height: 4vw;
+    padding: 1px;
+    height: 4.5vw;
     width: 93vw;
 }
 
 .circular__landscape {
     display: inline-block;
     position: relative;
-    top: 8px;
+    top: 15px; /* Как улучшить  */
     left: 10px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -28,7 +29,7 @@
 .image {
     width: auto;
     height: 100%;
-    margin-left: -12px;
+    margin-left: -25%;
 }
 
 .block_img_name_balance {
@@ -40,27 +41,31 @@
 
 .name {
     position: absolute;
-    top: 25px;
-    left: 150px;
-
+    top: 40%;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .balance {
     position: absolute;
-    top: 25px;
-    left: 350px;
-
+    top: 40%;
+    left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .last_seen {
     position: absolute;
-    top: 8px;
-    right: 400px;
+    top: 40%;
+    right: 20%;
+    color: #b3b2b2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .status {
     position: absolute;
-    top: 25px;
-    right: 80px;
+    top: 40%;
+    right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
     

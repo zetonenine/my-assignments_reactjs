@@ -16,7 +16,7 @@ const Dater = (item) => {
         )
     } else if (1 < diff_days < 7) {
         return (
-            `Последнее изменение: ${diff_days} дней назад: </span>`
+            `Последнее изменение: ${diff_days} дней назад`
         )
     } else if (1 < diff_hours < 24) { 
         return (

@@ -39,18 +39,7 @@
     border-radius: 5px;
 }
 
-/* header {
-    text-align: center;
-    padding: 0px;
-    box-shadow: 0 5px 0 1px rgb(209, 44, 44);    
-    height: 50px;
-} */
+.square_off {
+    display: none;
+}
 
-/* header a {
-    color: black;
-    padding: 5px;
-    font-weight: 500;
-    transition: all .2s linear;
-    border-bottom: 2px solid transparent;
-    font-size: 20px;
-} */

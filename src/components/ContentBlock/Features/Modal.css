@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
 .modal {
     position: fixed;
     height: 100vh;
@@ -55,7 +58,8 @@
     margin: auto;
     margin-left: 10px;
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto;
+    font-weight: 500;
     display: inline-block;
     color: #282828;
 }
@@ -81,7 +85,8 @@
     align-content: center;
     margin-top: 30px;
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto;
+    font-weight: 300;
     border-radius: 7px;
     background-color: transparent;
     border: 1.5px solid;
@@ -105,8 +110,8 @@
     width: 180px;
     height: 40px;
     border-radius: 7px;
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto;
+    font-weight: 300;
     color: white;
     background-color: #6b7df0;
     border: 1.5px solid;

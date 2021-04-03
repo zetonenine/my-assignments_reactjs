@@ -1,4 +1,5 @@
- 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 
 .titles {
     position: absolute;
@@ -8,7 +9,7 @@
     bottom: 16.5px;
     left: 45px;
     padding: 6px 20px 6px 20px;
-    width: 450px;
+    width: 400px;
     height: 30px;
     justify-content: space-between;
 }
@@ -22,7 +23,10 @@
     margin: auto;
     margin-right: 0;
     display: inline-block; 
-    color: #dedede; 
+    color: #cccccc; 
+    font-family: Roboto;
+    font-weight: 300;
+
 }
 
 .active {

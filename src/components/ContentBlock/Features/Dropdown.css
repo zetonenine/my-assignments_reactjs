@@ -6,6 +6,7 @@
    top: 0px;
    left: 0px;
    z-index: 10;
+   cursor: auto;
 }
  
 .drop_background.active {
@@ -20,23 +21,39 @@
  
 .drop.active {
    display: block;
+   
 }
  
 .drop_content {
    position: relative;
-   right: 60px;
-   top: 20px;
-   height: 130px;
-   width: 200px;
+   right: 30px;
+   top: 10px;
+   height: 115px;
+   width: 190px;
    background-color: rgba(255, 255, 255, 1);
-   border-radius: 7px;
+   border-radius: 4px;
    box-shadow: 0 0px 10px rgba(92, 92, 92, 0.2);
-   border: 2px solid rgb(19, 156, 236);
    z-index: 999;
+
 }
- 
+
+.dropdown_opitons {
+   position:absolute;
+   padding: 15px;
+   box-sizing: border-box;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+
 .not_chosen_text {
    color: rgba(0, 0, 0, 0.2 );
-   margin-bottom: 20px;
+   margin-bottom: 0;
+   display: flex;
+   
 }
 

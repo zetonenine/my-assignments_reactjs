@@ -1,7 +1,6 @@
 # Start locally:
 
 #### `npm ci`
-#### `npm run build`
 #### `npm start`
 
 go to localhost:3000

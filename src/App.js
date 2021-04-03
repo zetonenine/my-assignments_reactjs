@@ -5,7 +5,8 @@ import All from './components/Pages/AllPage'
 import Blocked from './components/Pages/BlockedPage.js';
 import Active from './components/Pages/ActivePage.js';
 import './App.css';
- 
+import img from './components/loading.jpg' 
+
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -41,7 +42,11 @@ function App() {
           }
           {
             !isLoaded && 
-              <div className='loading_text'>Loading...</div>
+              <>
+                <img src={'/components/loading.jpg'} />
+                <div className='loading_text'>Loading...</div>
+                
+              </>
           }
           {!error && isLoaded &&
               <Switch>

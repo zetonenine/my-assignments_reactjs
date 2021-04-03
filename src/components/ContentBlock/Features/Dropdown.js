@@ -2,7 +2,6 @@ import React from 'react';
 import DropdownContent from './DropdownContent.js';
 import '../../Stylistics.css'
 
-
 export default function Dropdown(props) {
     
     const handleClick = (e) => {

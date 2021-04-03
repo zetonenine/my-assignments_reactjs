@@ -10,7 +10,6 @@ function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [users, setUsers] = useState([]);
- 
 
   useEffect(() => {
     fetch("https://watchlater.cloud.technokratos.com/get/array")
@@ -27,7 +26,6 @@ function App() {
     )
   }, [])
 
-
   return (
     <div className='App'>
 
@@ -38,10 +36,12 @@ function App() {
 
         <div>
           {
-            error && <div>Error: {error.message}</div>
+            error &&
+              <div>Error: {error.message}</div>
           }
           {
-            !isLoaded && <div className='loading_text'>Loading...</div>
+            !isLoaded && 
+              <div className='loading_text'>Loading...</div>
           }
           {!error && isLoaded &&
               <Switch>
@@ -54,16 +54,11 @@ function App() {
                 <Route exact path='/blocked'>
                     <Blocked users={users}/>
                 </Route>
-
               </Switch>
-
-
-
           }
         </div>
       </Router>
     </div>
-
   ); 
 }
  

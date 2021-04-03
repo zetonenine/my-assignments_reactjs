@@ -1,32 +1,34 @@
 import React from 'react';
 import './Modal.css'
 
-const Modal = ({active, setActive, status}) => {
-
+export default function Modal(props){
+    
+    const handleClick = (e) => {
+        e.stopPropagation();
+        props.setActive(false)
+    }
+    
     return(
-        <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
-            <div className={active ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>
+        <div className={props.active ? "modal active" : "modal"} onClick={() => props.setActive(false)}>
+            <div className={props.active ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>
                 <div className='modal_header'>
-                    {/* <div className='test'>
-
-                    </div> */}
-                    <p className='title'> {active['fname']} {active['name']} </p> 
+                    
+                    <p className='title'> {props.active['fname']} {props.active['name']} </p> 
+                    <p className='x'>X</p>
                 </div>
                 
-                <div >
-                    <input className='inputs' value={active['fname']} readOnly></input>
-                    <input className='inputs' value={active['name']} readOnly></input>
-                    <input className='inputs' value={active['mname']} readOnly></input>
+                <div className='wrap'>
+                    <input className='input' value={props.active['fname']} readOnly></input>
+                    <input className='input' value={props.active['name']} readOnly></input>
+                    <input className='input' value={props.active['mname']} readOnly></input>
+                    <input className='input' value={props.status[props.active['status']]} readOnly></input>
                 </div>
-                <span>{active['fname']}</span>
-                <span>{active['name']}</span>  
-                <span>{active['mname']}</span>  
-                
-
-                <span>{status[active['status']]}</span> 
+                <button className='save_button' onClick={(e) => handleClick(e)}>Сохранить</button>
             </div>
         </div>
     );
 };
 
-export default Modal;
+
+    
+

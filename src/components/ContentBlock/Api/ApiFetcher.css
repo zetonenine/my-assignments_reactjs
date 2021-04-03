@@ -1,0 +1,9 @@
+.loading_text  {
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 400px;
+    left: 720px;
+
+}

@@ -1,10 +1,11 @@
 import React from 'react';
 import ContentBlock from '../ContentBlock/ContentBlock.js';
 
-export default function Blocked() {
+export default function Blocked(props) {
+    console.log(props.users.status)
     return(
         
-        <ContentBlock filter={2}/>
+        <ContentBlock users={props.users} filter={2}/>
     )
 } 
     

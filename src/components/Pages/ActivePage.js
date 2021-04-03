@@ -1,9 +1,9 @@
 import React from 'react';
 import ContentBlock from '../ContentBlock/ContentBlock.js';
 
-export default function Active() {
+export default function Active(props) {
     return(
         
-        <ContentBlock filter={1}/>
+        <ContentBlock users={props.users} filter={1}/>
     )
 }

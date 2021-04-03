@@ -33,10 +33,11 @@
     position: absolute;
     background-color: #6b7df0;
     bottom: -53px;
-    left: 0;
-    width: 100%;
+    width: 120%;
     height: 40px;
     border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .square_off {

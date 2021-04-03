@@ -1,5 +1,5 @@
 import React from 'react';
-import './Dropdown.css'
+import '../../Stylistics.css'
 
 export default function DropdownContent(props) {
 

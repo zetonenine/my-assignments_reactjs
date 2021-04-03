@@ -1,6 +1,7 @@
 import React from 'react';
-import './Dropdown.css';
 import DropdownContent from './DropdownContent.js';
+import '../../Stylistics.css'
+
 
 export default function Dropdown(props) {
     
@@ -12,7 +13,7 @@ export default function Dropdown(props) {
     return (
         <>
            <div className={props.active ? 'drop active' : 'drop'}>
-               <div className='drop_content' >
+               <div className='drop_content'>
                    <DropdownContent user={props.active} setActive={props.setActive}/>
                </div>
            </div>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './Content.css';
 import Modal from './Features/Modal.js';
 import User from './User';
-
+import '../Stylistics.css'
 
 export default function ContentBlock(props) {
 
@@ -15,8 +14,9 @@ export default function ContentBlock(props) {
             return (
                 <User key={item.id} data={item} handleClick={() => setModalActive(item)} />
         
-        )} return(console.log('No status')) // для избегания ошибки Array.prototype.map() expects a value to be returned at the end of arrow function
-    });
+            )} return(console.log('No status')) // для избегания ошибки Array.prototype.map() expects a value to be returned at the end of arrow function
+        }
+    );
     
     return (
         <div>

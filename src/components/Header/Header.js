@@ -1,30 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css';
+import '../Stylistics.css';
 
 export default function Header() {
 
     return (
-        <header className='titles'>
-                
-            
-                <NavLink exact to="/" className="text">
+        <header className='header_titles'>
+                <NavLink exact to="/" className="header_text">
                     Все
                     <div className="square"/>
-                    
                 </NavLink>
-                <NavLink exact to='/blocked' className='text'>
+                <NavLink exact to='/blocked' className='header_text'>
                     Заблокированные
                     <div className="square"/>
-                    
                 </NavLink>
-                <NavLink exact to='/active'  className='text'>
+                <NavLink exact to='/active'  className='header_text'>
                     Активные
                     <div className="square"/>
-                    
                 </NavLink>  
         </header>
-            
     )
 };
 

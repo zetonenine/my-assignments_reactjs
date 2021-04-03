@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default function Header() {
@@ -13,8 +13,8 @@ export default function Header() {
     };
 
     return (
-        <Router>
-            
+        
+            <header className='titles'>
                 
             
                 <Link to="/">
@@ -22,8 +22,8 @@ export default function Header() {
                         {/* <div className={isActiveAll ? "square" : "square_off"}/> */}
                     
                 </Link>
-                <Link to='/blocked'>
-                    <a className={isActiveBlocked ? 'text active' :'text'} onClick={() => toggleClass(setActiveBlocked)}>Заблокированные
+                <Link to='/blocked' className={isActiveBlocked ? 'text active' :'text'} onClick={() => toggleClass(setActiveBlocked)}>
+                    <a>Заблокированные
                         <div className={isActiveBlocked ? "square" : "square_off"}/>    
                     </a>
                 </Link>
@@ -33,8 +33,7 @@ export default function Header() {
                     </a>
 
                 </Link>  
-           
-        </Router>    
+            </header>
             
     )
 };

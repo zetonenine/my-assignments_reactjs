@@ -19,11 +19,12 @@
 }
 
 .modal__content {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     transform: scale(0.5);
-    height: 55vh;
+    height: 60vh;
     width: 55vw;
     transition: 0.3s;
+    border-radius: 13px;
 }
 
 .modal__content.active {
@@ -31,61 +32,70 @@
 }
 
 .modal_header {
-    position: relative;
+    list-style: none;
     display: flex;
-
-    /* height: 20%;
-    width: 100%; */
-    background-color: rgba(0, 0, 0, 0.2 );
-    flex-direction: column;
     justify-content: space-between;
-
-    padding: 30px 0px;
     box-sizing: border-box;
+    padding: 0px 20px 0 20px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 13%;
+    width: 100%;
+    border-radius: 20px;    
+}
 
-    
+.hr {
+    border: 0.6px solid;
+    margin: 0;
+    border-color: #ebebeb;
 }
 
 .title {
-    position: absolute;
-    margin-top: 0;
+    top: 50%;
+    margin: auto;
+    margin-left: 10px;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-block;
-
+    color: #282828;
 }
 
 .x {
-    position: absolute;
-    margin-top: 0;
+    margin: auto;
+    margin-right: 10px;
+    top: 50%;
+    color: #6b7df0;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-block;
-
+    cursor: pointer;
 }
 
 .input{
     width: 220px;
-    height: 30px;
+    height: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 30px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 7px;
-    outline: none;
+    background-color: transparent;
+    border: 1.5px solid;
+    border-color: #ebebeb;
+    box-shadow: 10px 10px 100px 10px rgba(92, 92, 92, 0.1);
+    padding-left: 20px;
 }
 
-.wrap {
+.modal_body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 80px;
-
 }
 
 .save_button {
@@ -99,17 +109,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: #6b7df0;
-
+    border: 1.5px solid;
+    cursor: pointer; 
 }
-
-.test {
-    background-color: rgb(155, 0, 0);
-    height: 60px;
-    width: 60px;
-    display: inline-block;
-
-}   /* удалить  */
-
 
 
 

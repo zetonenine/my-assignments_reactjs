@@ -10,16 +10,21 @@ function App() {
 
   return (
     <div className='App'>
-      <Header/>
-      <Router>
+      <div className='header'>
+        <Header/>
+      </div>
+      <div>
+        <Router>
         <Switch>
           <Route exact path='/' component={All}/>
           <Route exact path='/blocked' component={Blocked}/>
           <Route exact path='/active' component={Active}/>
         </Switch> 
       </Router> 
+      </div>
+      
     </div>
-  );      
+  );  
 }
 
 export default App;

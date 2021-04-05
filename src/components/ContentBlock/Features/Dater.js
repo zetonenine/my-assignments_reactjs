@@ -1,7 +1,7 @@
 
-const Dater = (item) => {
+export default function Dater(props) {
 
-    const date = new Date(item);
+    const date = new Date(props.item);
     let currentDate = Date.parse(new Date());
 
     const diff_days = Math.round((currentDate - Date.parse(date))/86400000);
@@ -31,5 +31,3 @@ const Dater = (item) => {
         )      
     }
 };
-
-export default Dater;

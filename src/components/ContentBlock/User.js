@@ -21,7 +21,7 @@ export default function User(props) {
                 </div>
                 <span className='name'>{props.data.fname} {props.data.name.split('')[0]}. {props.data.mname.split('')[0]}.</span>
                 <span className='balance'>Баланс: {Number(props.data.balance.toFixed(1)).toLocaleString('ru-RU').replace(',', '.')} </span>
-                <span className='last_seen'>{Dater(props.data.lastUpdatedAt)}</span>
+                <span className='last_seen'><Dater item={props.data.lastUpdatedAt}/></span>
             </div>
             <div className='status' onClick={(e) => handleDropdownClick(e, props.data)}>
                {statusText[props.data.status]} ▾

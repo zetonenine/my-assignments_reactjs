@@ -43,7 +43,7 @@ function App() {
           {
             !isLoaded && 
               <>
-                <img src={img} />
+                <img src={img} alt='Joke' />
                 <div className='loading_text'>Loading...</div>
               </>
           }
